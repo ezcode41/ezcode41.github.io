@@ -45,6 +45,7 @@ a:hover {
     position: relative;
     color: blue;
     text-align: center;
+    vertical-align: middle;
     padding: 12vw 0px;
     margin: 25px auto;
     z-index: 1;
@@ -54,6 +55,7 @@ a:hover {
     background-image: url(../images/banner.jpg);
     background-size: 100% 100%;
     width: 95vw;
+    height: 50vw;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -65,7 +67,9 @@ a:hover {
 }
 #logo {
     background-color: white;
-    border-radius: 75px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 25vw;
 }
 #narrow {
     margin-top: 10px;
@@ -271,7 +275,7 @@ footer {
 }
 
 /* tablet */
-@media (max-width: 1023px) {
+@media all and (max-width: 1023px) {
     p {
         font-size: 14px;
     }
@@ -282,26 +286,29 @@ footer {
         width: 92vw;
         height: 60vw;
     }
-    .banner {
-        height: 80vh;
-        padding: 18vh;
-    }
     #intro, #program, #member, #link {
         width: 92vw;
     }
 }
 
 /* mobile */
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
     p {
         font-size: 12px;
     }
+    .banner h1 {
+        font-size: 18px;
+    }
+    .banner h3 {
+        font-size: 14px;
+    }
+
     #add {
         font-size: 12px;
         line-height: 48px;
     }
     ul {
-        font-size: 14px;
+        font-size: 12px;
     }    
     .active {
         display: block;
